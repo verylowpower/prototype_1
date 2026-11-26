@@ -2,7 +2,7 @@
 
 A Unity prototype simulating a **drone flying through a city** under **aerodynamic wind forces**: base wind, street-canyon (venturi) effect, wake turbulence behind buildings, and altitude-based wind shear.
 
-> Project for learning Unity/C# — code is written by hand, not generated. See [agents.md](agents.md).
+> Project for learning Unity/C# — code is written by hand, not generated.
 
 ## Requirements
 
@@ -55,10 +55,11 @@ F_drag = 0.5 · ρ · |v_rel|² · Cd · A
 F_wind = −v_rel_dir · F_drag
 ```
 
-Wind is currently zeroed when the drone is occluded from the wind source. Planned improvements (venturi, wake turbulence, wind shear, PID attitude hold, downwash) are tracked in [plan.md](plan.md).
+Wind is currently zeroed when the drone is occluded from the wind source. Planned improvements include venturi, wake turbulence, wind shear, PID attitude hold, and downwash.
 
 ## Contributing
 
+- Commit scope: only commit changes inside `Assets/` (do not commit `Packages/`, `AGENTS.md`, or `plan.md`).
 - Commit messages: one line, concise.
 - Prefer pushing to a branch other than `main`.
 - No AI-written or AI-edited script files — review and explanations only.
