@@ -112,3 +112,9 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Packages and agent/planning docs (excluded per project Git rules)
+/[Pp]ackages/
+AGENTS.md
+agents.md
+plan.md

@@ -61,7 +61,7 @@ public class SimulateMain : MonoBehaviour
         Vector3 moveForceVector = _target.GetMoveForce();
 
         Vector3 totalForce = _windForceVector + objectThrustVector + moveForceVector;
-
+        Debug.Log($"Current Wind force ={totalForce}");
         _rb.AddForce(totalForce, ForceMode.Force);
 
         Debug.DrawRay(_rb.position, -_windDirection.normalized * _windCheckDistance, Color.red);
